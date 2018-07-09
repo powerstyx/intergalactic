@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <svg height="400" viewBox="0 0 400 400" width="400">
+      <defs>
+          <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+              <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.5"></path>
+          </pattern>
+          <pattern id="grid10" width="100" height="100" patternUnits="userSpaceOnUse">
+              <rect width="100" height="100" fill="url(#smallGrid)"></rect>
+              <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="1"></path>
+          </pattern>
+      </defs>
+
+      <rect fill="url(#grid10)" height="400" width="400" y="0"></rect>
+
+
+      <g transform="translate(200, 200) scale(1,-1)">
+          <g id="transformed" transform="rotate(0, 0, 0) translate(0,0)">
+
+              <polygon points="-5 -5, 0 10, 5 -5" style="fill: purple;"></polygon>
+          </g>
+          <text class="t36 t-mid bold f-black" x="50" y="50">+ +</text>
+          <text class="t36 t-mid bold f-black" x="-50" y="50">- +</text>
+          <text class="t36 t-mid bold f-black" x="50" y="-50">+ -</text>
+          <text class="t36 t-mid bold f-black" x="-50" y="-50">- -</text>
+      </g>
+
+  </svg>
+
+  <div>
+  <script src="script.js"></script>
+  control
+  <input type="text" size="3" id="posX" value="0">
+  <input type="text" size="3" id="posY" value="0">
+  direction
+  <input type="text" size="3" id="rotate" value="0">
+  <button size="3" onclick="redisplay()">Foo</button>
+  </div>
+
+  <embed name="E" id="E" src="ship01.svg" width="15"
+ height="15">
+
+
+
+
+</body>
+</html>
