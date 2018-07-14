@@ -5,6 +5,7 @@
     <title>title</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="./js/snap.svg.js"></script>
   </head>
   <body>
 
@@ -47,6 +48,16 @@
 
   <embed name="E" id="E" src="ship01.svg" width="15"
  height="15">
+ <script>
+ var s = Snap();
+ var bigCircle = s.circle(100,100,50);
+ Snap.load("./ship01.svg", function ( f ) {
+   s.append( f.select("g"));
+ });
+ </script>
+
+
+
 
 
 
