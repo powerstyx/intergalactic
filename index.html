@@ -36,18 +36,41 @@
 
   </svg>
 
-  <div>
-  <script src="script.js"></script>
-  control
-  <input type="text" size="3" id="posX" value="0">
-  <input type="text" size="3" id="posY" value="0">
-  direction
-  <input type="text" size="3" id="rotate" value="0">
-  <button size="3" onclick="redisplay()">Foo</button>
+  <div>ship.x
+    <input type="text" size="3" id="ship.x" value="0" readonly>
+  </div>
+  <div>ship.y
+    <input type="text" size="3" id="ship.y" value="0" readonly>
+  </div>
+  <div>ship.direction
+    <input type="text" size="3" id="ship.direction" value="0" readonly>
+  </div>
+  <br>
+  <div>speed.x
+    <input type="text" size="3" id="speed.x" value="0" readonly>
+  </div>
+  <div>speed.y
+    <input type="text" size="3" id="speed.y" value="0" readonly>
+  </div>
+  <div>speed.spin
+    <input type="text" size="3" id="speed.spin" value="0" readonly>
+  </div>
+<br>
+  <div>control.x
+  <input type="text" size="3" id="control.x" value="0">
+</div>
+<div>control.y
+  <input type="text" size="3" id="control.y" value="0">
+</div>
+<div>
+  control.spin
+  <input type="text" size="3" id="control.spin" value="0">
+</div>
+<div>
+  <button size="3" onclick="redisplay()">Next Round</button>
   </div>
 
-  <embed name="E" id="E" src="ship01.svg" width="15"
- height="15">
+<br>
  <script>
  var s = Snap();
  var bigCircle = s.circle(100,100,50);
